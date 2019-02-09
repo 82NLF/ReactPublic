@@ -1,0 +1,21 @@
+@import './fonts.css';
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.clear::before,
+.clear::after {
+  display: table;
+  content: " ";
+}
+
+.clear::after {
+  clear: both;
+}
